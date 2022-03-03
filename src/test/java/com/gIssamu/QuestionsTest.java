@@ -17,7 +17,6 @@ public class QuestionsTest {
         int result = Median.median(arr);
 
         assertTrue(result == 4);
-
     }
 
     @Test
@@ -28,7 +27,6 @@ public class QuestionsTest {
         int result = Counter.counterRun(x, n);
 
         assertTrue(result == 3);
-
     }
 
     @Test
@@ -37,7 +35,7 @@ public class QuestionsTest {
 
         String result = Encryptor.ecrypStrings(entry);
 
-        System.out.println(result.equals("taoa eum nmd hbi"));
+        assertTrue(result.equals("taoa eum nmd hbi"));
     }
 
     @Test
@@ -46,6 +44,6 @@ public class QuestionsTest {
 
         String result = Encryptor.ecrypStrings(entry);
 
-        System.out.println(result.equals("omd luo an"));
+        assertTrue(result.equals("omd luo an"));
     }
 }
